@@ -1,0 +1,7 @@
+services:
+  weather-etl:
+    build: .
+    container_name: europe-weather-etl
+    volumes:
+      - ./database:/app/database
+    command: python main.py
